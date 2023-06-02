@@ -23,11 +23,11 @@
     background-color: cadetblue;
     padding: 2rem;
     border-radius: 16px;
-    height: 500px;
+    height: fit-content;
 }
 
 
-button {
+.btn1, .btn2 {
     padding: 0.4rem;
     border-radius: 15px;
     cursor: pointer;
@@ -36,22 +36,50 @@ button {
     color: white;
 }
 
-input {
+.btn3 {
+    float: right;
+    padding: 0.4rem;
+    background-color: red;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.inp1 {
     width: 20rem;
     padding: 0.5rem;
 }
 
-button:hover {
+.btn1:hover {
     box-shadow: 0 10px 15px coral;
     transition: 0.2s;
     transform: scale(1.1);
     background-color: coral;
 }
 
+.btn2:hover {
+    box-shadow: 0 10px 15px coral;
+    transition: 0.2s;
+    transform: scale(1.1);
+    background-color: coral;
+}
+
+.btn3:hover {
+    box-shadow: 0 10px 15px red;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
 ul {
     font-size: 2rem;
     margin-top: 1rem;
     color: white;
+    list-style-type: none;
+}
+
+li {
+    margin-top: 1rem;
+    outline: 2px solid burlywood;
 }
 
 @media screen and (max-width:560px) {
@@ -60,12 +88,12 @@ ul {
       flex-direction: column;
     }
 
-    button {
+    .btn1,.btn2 {
         width: 100%;
         border-radius: 0;
     }
 
-    input {
+    .inp1 {
         width: 100%;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
@@ -76,12 +104,12 @@ ul {
       width: 300px;
     }
 
-    button {
+    .btn1,.btn2 {
         width: 100%;
         border-radius: 0;
     }
 
-    input {
+    .inp1 {
         width: 100%;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
